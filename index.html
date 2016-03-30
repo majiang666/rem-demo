@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0"> -->
+	<title>rem全兼容demo</title>
+	<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script> 
+	<style type="text/css">
+		*{margin:0;padding:0;font-family:"microsoft yahei", Arial, Helvetica, 'simhei';}
+a{
+	color: #333;
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.top {
+	height:1.46667rem;
+    line-height: 1.46667rem;
+    font-size: 16px;
+    text-align: center;
+    background: #f7f7f7;
+    position: relative;
+}
+[data-dpr="2"] .top {
+  font-size: 32px;
+}
+[data-dpr="3"] .top {
+  font-size: 48px;
+}
+
+.mean{
+	height: auto;
+	background: #fff;
+	position: absolute;
+	top: 1.46667rem;
+	bottom:0;
+	left: 0;
+	right: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.mean ul li{
+	border-top:solid 1px #e3e3e3;
+	padding:0.4rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.mean ul li a{
+	font-size: 14px;
+}
+[data-dpr="2"] .mean ul li a {
+  font-size: 28px;
+}
+[data-dpr="3"] .mean ul li a {
+  font-size: 42px;
+}
+		
+	</style>
+</head>
+<body>
+	<div class="top">rem全兼容demo</div>
+	<div class="mean">
+		<ul>
+			<li><a href="#">在实际生产当中，如果每一次计算 px 转换 rem</a></li>
+			<li><a href="#">为了能让大家更快进行转换，我们团队内的同学各施所</a></li>
+			<li><a href="#">Sublime Text3自动完成插件</a></li>
+			<li><a href="#">除了使用编辑器的插件之外，还可以使用CSS的处理器来帮助大家处理</a></li>
+			<li><a href="#">使用Sass的同学，可以使用Sass的函数</a></li>
+		</ul>
+	</div>
+
+	
+</body>
+</html>
